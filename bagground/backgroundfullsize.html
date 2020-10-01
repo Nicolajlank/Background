@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style> 
-html { 
+    <style> 
+        html { 
   background: url(img_man.jpg) no-repeat center fixed; 
   background-size: cover;
 }
 
-body { 
+        body { 
   color: white; 
 }
-</style>
+    </style>
+     <style>
+    @media screen and (max-width: 700px) {     
+        #pagewrap {  
+            display: grid;         
+            grid-gap: 2em;         
+            grid-template-columns: 1fr 1fr 1fr;         
+            grid-template-rows: repeat(5, 0fr);         
+            grid-template-areas: "titel titel titel"  "intro intro intro"   "retning retning retning"        "distribution distribution distribution"    "gennemsigtighed gennemsigtighed gennemsigtighed" "footer footer footer"; 
+    </style>
 </head>
 <body>
 
-<h1>Full Page Background Image</h1>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+        <h1>Full Page Background Image</h1>
+            <p>Dette næste eksempel viser hvordan vi kan have et baggrundsbillede i sin fulde størrelse hvor billedet har en fixed og centeret position.
+                Vi bruger html elementet hvor elementets højde er altid den højde ens browers vinduet er i - også setter vi en fixed og centeret baggrund på det og så justere vi størrelsen med background-size proterty: 
 
+            </p>
+        <img src="fullsizeeksemple.jpg">
+    <h2> kom tilbage til background eksempler<a href="backgroundforside.html"> her </h2>
 </body>
 </html>

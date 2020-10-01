@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style> 
-#example1 {
-  background-image: url(img_flwr.gif), url(papir.jpg);
-  background-position: right bottom, left top;
-  background-repeat: no-repeat, repeat;
-  padding: 15px;
-}
-</style>
+    <style> 
+        #example1 {
+          background-image: url(img_flwr.gif), url(papir.jpg);
+          background-position: right bottom, left top;
+          background-repeat: no-repeat, repeat;
+          padding: 15px;
+        }
+    </style>
+     <style>
+    @media screen and (max-width: 700px) {     
+        #pagewrap {  
+            display: grid;         
+            grid-gap: 2em;         
+            grid-template-columns: 1fr 1fr 1fr;         
+            grid-template-rows: repeat(5, 0fr);         
+            grid-template-areas: "titel titel titel"  "intro intro intro"   "retning retning retning"        "distribution distribution distribution"    "gennemsigtighed gennemsigtighed gennemsigtighed" "footer footer footer"; 
+    </style>
 </head>
 <body>
 
-<h1>Multiple Backgrounds</h1>
-<p>The following div element has two background images:</p>
+        <p>Det følgende div elementer har 2 baggrundsbilleder </p>
 
-<div id="example1">
-  <h1>Lorem Ipsum Dolor</h1>
-  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-</div>
+    <div id="example1">
+        <h1>Multiple backgrounds</h1>
+            <p>CSS giver dig også muligheden for tilføje op til flere baggrundsbilleder med background-image propetyen. 
 
+
+            De forskellige billeder er separeret af kommaer og billederne ligger oven på hinanden for det første billede er det der tættestet på brugeren. 
+
+            Det følgende eksempel har 2 forskellige baggrundsbilleder det første billede er blomsten (Som positioneret i nederst højre hjørne) og det andet billede er papir baggrunden (Som er positioneret til øverste venstre hjørne). 
+                  kode ser sådan her ud:
+            </p>
+    <img src="multi%20backgrounds%20eksemple1.png"> 
+              <p>En anden måde også at kunne påvirke de individuelle billeder er at bruge en background shorthand property som giver det samme resultat men kan spare lidt tid. 
+            Koden ser sådan her ud: 
+             </p>
+    <img src="multi%20backgrounds%20eksemple2.png"> 
+    
+        <h2> kom tilbage til background eksempler<a href="backgroundforside.html" her> her </h2>
+    </div>    
 </body>
 </html>

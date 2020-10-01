@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #example1 {
+              border: 1px solid black;
+              background: url(img_flwr.gif);
+              background-size: 100px 80px;
+              background-repeat: no-repeat;
+              padding: 15px;
+}
+
+        #example2 {
+              border: 1px solid black;
+              background: url(img_flwr.gif);
+              background-repeat: no-repeat;
+              padding: 15px;
+}
+    </style>
+    <style>
+    @media screen and (max-width: 700px) {     
+        #pagewrap {  
+            display: grid;         
+            grid-gap: 2em;         
+            grid-template-columns: 1fr 1fr 1fr;         
+            grid-template-rows: repeat(5, 0fr);         
+            grid-template-areas: "titel titel titel"  "intro intro intro"   "retning retning retning"        "distribution distribution distribution"    "gennemsigtighed gennemsigtighed gennemsigtighed" "footer footer footer"; 
+    </style>
+</head>
+<body>
+
+    <h1>The background-size Property</h1>
+    
+        <p> Du kan gå ind og ændre størrelsen på dit baggrundsbillede med background-size propety’en. størrelsen på dit baggrundsbillede kan blive ændret med forskellige valgmuligheder: Enten med lengths, procenter eller bruge 1 ud af de 2 propetyes: Contain eller cover.   </p>
+
+            <p>Resized background-image:</p>
+    <div id="example1">
+        <h2>resized-background</h2>
+              <p>Contain: property-value bruges på den måde at hvis du har et billede der gerne skal være så stort som muligt men det skal kun fylde så meget der hvor du har din tekst inde i.
+            </p>
+    </div>
+
+            <p>her er den original størrelse af billedet:</p>
+    <div id="example2">
+        <h2>Lorem Ipsum Dolor</h2>
+            <p>Cover propetyen bruges når du har et baggrundsbillede som scaler så hele billedet bliver fyldt af dit content area (Både i højde og bredde) så ved nogle tilfælde kan det være at dele af dit billede ikke vil blive synlig der hvor du har placeret det.
+            </p>
+
+    </div>
+    
+      <img src="backgroundresizeeksemple1.png">
+            <h2> kom tilbage til background eksempler<a href="backgroundforside.html"> her </h2>
+</body>
+</html>
